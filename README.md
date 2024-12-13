@@ -1,1 +1,1 @@
-# Signally
+# GoCashCoin
