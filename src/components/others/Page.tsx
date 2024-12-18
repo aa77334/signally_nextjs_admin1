@@ -11,7 +11,7 @@ interface Props {
 const Page = forwardRef<HTMLDivElement, Props>(({ children, title = '', meta, ...other }, ref) => (
   <>
     <Head>
-      <title>{`${title} | GoCashCoin`}</title>
+      <title>{`${title} | Signally`}</title>
       {meta}
     </Head>
 

@@ -54,9 +54,9 @@ function Form({ id, signal, market, dbPath }: IProps) {
   const router = useRouter();
   const modals = useModals();
   const isAuto = (router.query.isAuto as string) || '';
-  const currentSignalIsAuto = signal?.isAuto ?? true;
+  const currentSignalIsAuto = signal?.isAuto ?? false;
 
-  const [isLoading, setIsLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState(false);
   const [file, setFile] = useState<CustomFile | null>(null);
 
   const symbolAggr = useFirestoreStoreAdmin((state) => state.symbolAggr);
